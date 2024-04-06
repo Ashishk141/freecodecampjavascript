@@ -1,3 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-grey-dark: #36b2d1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: green;
+  color: var(--color-grey-dark);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  background: rgb(2, 0, 36);
+  background-color: #2a2a2a;
+
+  box-sizing: border-box;
+}
+
+time {
+  font-weight: bold;
+}
+
+.link {
+  color: rgb(0, 243, 0);
 }
