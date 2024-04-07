@@ -171,7 +171,7 @@ function worldBlanks(myNoun, myAdjective, myVerb, MyAdverb) {
     myNoun +
     " " +
     myVerb +
-    "to the store " +
+    " to the store " +
     MyAdverb +
     ".";
 
@@ -208,4 +208,110 @@ var setArray = [50, 60, 70];
 var myData = setArray[0];
 console.log(myData);
 
+// learning javascript now start from later 43 min:35 sec
 // Modify Array Data with Indexes
+var ourArray = [18, 64, 99];
+ourArray[1] = 45;
+
+var myArray = [18, 64, 99];
+myArray[0] = 45;
+
+console.log(ourArray);
+console.log(myArray);
+
+// MultiDimensional Array
+var myArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+// Only change code below this line
+var myData = myArray[0][0];
+console.log(myData);
+
+console.log(myArray[2][1]);
+
+// Manipulate Arrays with Push ()
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.push("happy", "joy");
+ourArray.push(["John", "cat"]);
+ourArray.push(myArray);
+console.log(ourArray);
+
+// Remove item from Array
+var ourArray = [1, 2, 3];
+var removedFromArray = ourArray.pop();
+
+var myArray = [
+  ["John", 23],
+  ["cat", 2],
+];
+
+var removedFromMyArray = myArray.pop();
+console.log(removedFromMyArray);
+
+// Manipulate Arrays with Shift()
+var newArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+
+// remove first element in array
+var removedFromNewArray = newArray.shift();
+console.log(removedFromArray);
+console.log(newArray);
+
+// UnShift() - add the element begenning of Array
+var mynewArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+mynewArray.shift();
+console.log(mynewArray);
+
+mynewArray.unshift(["Paul", 35]); // add the element begenning of Array
+console.log(mynewArray);
+
+// Shopping Lists - Nested Array
+var myLists = [
+  ["cereal", 3],
+  ["milk", 2],
+  ["bananas", 3],
+  ["juice", 2],
+  [" biscuits", 12],
+];
+
+// displaying lists from array without using loop
+console.log(myLists.flat());
+const displayElements = myLists.flat().map((element) => console.log(element));
+
+//  Functions
+function ourReusableFunction(a, b) {
+  console.log("sum = ", a + b);
+  console.log("Heyya, World");
+}
+
+ourReusableFunction(12, 13);
+ourReusableFunction(15, 16);
+
+const resusable = function (a, b) {
+  console.log("Hi World");
+  console.log("sub = ", a - b);
+};
+resusable(20, 10);
+
+function witghArgs(a, b) {
+  console.log(a + b);
+}
+witghArgs(4, 9);
+
+// Global functions Scope
+var myGlobal = 10;
+
+function fun1() {}
+
+function fun2() {
+  var output = "";
+}
