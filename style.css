@@ -29,4 +29,11 @@ time {
 
 .link {
   color: rgb(0, 243, 0);
+  /* font-size: 25rem; */
+  font-weight: 900;
+}
+
+.complete {
+  color: aquamarine;
+  font-size: 3.5rem;
 }
